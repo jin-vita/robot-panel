@@ -1,18 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<LinearLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity">
-    <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Hello World!"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+        tools:context=".MainActivity" android:orientation="vertical">
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <Button
+                android:text="문열기"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/door_control_button" android:layout_weight="1"/>
+        <Button
+                android:text="포인트 리스트"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/button2" android:layout_weight="1"/>
+        <Button
+                android:text="현재 맵"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/currentMapButton" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_weight="1">
+        <Button
+                android:text="포인트 리스트"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/point_list_button" android:layout_weight="1"/>
+        <Button
+                android:text="경로 리스트"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/path_list_button" android:layout_weight="1"/>
+        <Button
+                android:text="시퀀스 리스트"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/sequence_list_button" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>
