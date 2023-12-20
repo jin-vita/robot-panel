@@ -7,7 +7,7 @@ import java.text.SimpleDateFormat
 import java.util.*
 
 object AppData {
-    const val BASE_URL_ROBOT = "https://119.77.52.21/"
+    const val BASE_URL_ROBOT = "https://119.6.3.91:40023/moms/v1/rcs/blood/"
     const val BASE_URL_DOOR = "https://119.6.3.91:40018/moms/v1/"
     var isDebug = true
     fun debug(tag: String, msg: String) {
