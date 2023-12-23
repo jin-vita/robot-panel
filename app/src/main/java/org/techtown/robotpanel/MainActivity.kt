@@ -23,7 +23,11 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun initButton() = with(binding) {
-        doorControlButton.setOnClickListener { requestDoorControl("SMC-C02C-DOOR-001") }
+        door1Button.setOnClickListener { requestDoorControl("SMC-C02C-DOOR-001") }
+        door2Button.setOnClickListener { requestDoorControl("SMC-C02C-DOOR-002") }
+        door3Button.setOnClickListener { requestDoorControl("SMC-C02C-DOOR-003") }
+        door4Button.setOnClickListener { requestDoorControl("SMC-C02C-DOOR-004") }
+        door5Button.setOnClickListener { requestDoorControl("SMC-C02C-DOOR-005") }
         currentMapButton.setOnClickListener { requestCurrentMAp() }
         pointListButton.setOnClickListener { requestPointList() }
         pathListButton.setOnClickListener { requestPathList() }

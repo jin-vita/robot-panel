@@ -10,8 +10,37 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
         <Button
-                android:id="@+id/doorControlButton"
-                android:text="문열기"
+                android:id="@+id/door1Button"
+                android:text="문1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+        <Button
+                android:id="@+id/door2Button"
+                android:text="문2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+        <Button
+                android:id="@+id/door3Button"
+                android:text="문3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+        <Button
+                android:id="@+id/door4Button"
+                android:text="문4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <Button
+                android:id="@+id/door5Button"
+                android:text="문5"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"/>
